@@ -3,3 +3,5 @@ rag_env/
 
 # Ignore FAISS index folder
 faiss_indexes/
+
+modules/__pycache__/
