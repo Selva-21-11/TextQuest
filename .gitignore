@@ -1,0 +1,5 @@
+# Ignore virtual environment
+rag_project/rag_env/
+
+# Ignore FAISS index folder
+rag_project/faiss_indexes/
