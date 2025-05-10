@@ -1,8 +1,6 @@
 
 # TextQuest - AI-Powered Textbook Question Answering System
 
-![TextQuest Logo](logo.png)
-
 *A smart assistant for answering textbook questions with precision*
 
 ---
@@ -141,41 +139,5 @@ textquest/
 └── README.md              # This file
 ```
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository  
-2. Create a new branch:  
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Commit your changes:  
-   ```bash
-   git commit -am "Add some feature"
-   ```
-4. Push to the branch:  
-   ```bash
-   git push origin feature/your-feature
-   ```
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📧 Contact
-
-For questions or support, please contact:  
-**[Your Name]** – [your.email@example.com]  
-Project Link: [https://github.com/yourusername/textquest](https://github.com/yourusername/textquest)
-
----
 
 **TextQuest** – *Making textbook learning smarter and more efficient* 📚✨
