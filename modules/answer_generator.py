@@ -1,6 +1,7 @@
 from typing import Dict
 from langchain.chains import RetrievalQA
 from tqdm import tqdm
+from modules.parser import extract_options
 
 def generate_answers(structured_questions: Dict, qa_chain: RetrievalQA) -> Dict:
     structured_answers = {}
@@ -13,7 +14,13 @@ def generate_answers(structured_questions: Dict, qa_chain: RetrievalQA) -> Dict:
             for q in questions:
                 try:
                     query = q["question"]
-                    result = qa_chain({"query": query})
+                    # Modify the QA chain call to:
+                    result = qa_chain({
+                        "query": query,
+                        "marks": q["marks"],
+                        "is_mcq": q.get("is_mcq", False),
+                        "options": extract_options(q["question"]) if q.get("is_mcq", False) else ""
+                    })
                     structured_answers[part][section].append({
                         "number": q["number"],
                         "question": q["question"],
